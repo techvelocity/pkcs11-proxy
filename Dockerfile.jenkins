@@ -1,2 +1,2 @@
 FROM docker.sunet.se/jenkins-job
-RUN apt-get install openssl-dev
+RUN apt-get install libssl-dev
