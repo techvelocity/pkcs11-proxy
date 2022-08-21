@@ -11,3 +11,5 @@ brew install openssl@1.1 cmake
 rm -rf build; mkdir build; cmake ..
 make
 ```
+
+The `build/macOS.tar.gz` file will contain compiled binaries.
