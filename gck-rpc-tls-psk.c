@@ -35,6 +35,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+#include <string.h>
+
 /* TLS pre-shared key */
 static char tls_psk_identity[128] = { 0, };
 static char tls_psk_key_filename[MAXPATHLEN] = { 0, };

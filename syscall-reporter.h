@@ -12,7 +12,9 @@
 #ifndef _BPF_REPORTER_H_
 #define _BPF_REPORTER_H_
 
+#ifdef DEBUG_SECCOMP
 #include "seccomp-bpf.h"
+#endif
 
 /* Since this redfines "KILL_PROCESS" into a TRAP for the reporter hook,
  * we want to make sure it stands out in the build as it should not be
