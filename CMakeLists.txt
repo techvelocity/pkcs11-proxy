@@ -60,9 +60,3 @@ add_custom_command(
    OUTPUT syscall-names.h 
    COMMAND ${CMAKE_SOURCE_DIR}/mksyscalls.sh
    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
-
-add_custom_target(
-    package_macOS ALL 
-    COMMAND ${CMAKE_COMMAND} -E tar cfvz "macOS.tar.gz" libpkcs11-proxy.* pkcs11-daemon
-    WORKING_DIRECTORY "${CMAKE_BINARY_DIR}"
-)
